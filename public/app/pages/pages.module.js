@@ -1,1 +1,2 @@
-angular.module('app.pages',['app.pages.home']);
+angular.module('app.pages',['app.pages.home',
+                            'app.pages.auth']);

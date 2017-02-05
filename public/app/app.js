@@ -4,7 +4,7 @@ angular.module('app',[
 ]).config(function($stateProvider,$urlRouterProvider){
 
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/auth');
     
 
     $stateProvider.state({
@@ -17,6 +17,12 @@ angular.module('app',[
         name:'about',
         url:'/about',
         template:'asdfg'
+    });
+
+    $stateProvider.state({
+        name:'auth',
+        url:'/auth',
+        templateUrl:'app/pages/auth/auth.html'
     });
 
 
