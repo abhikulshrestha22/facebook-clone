@@ -11,7 +11,10 @@ var port = require('./config/config').port;
 
 mongoose.connect(database.url);
 
+//app.get('/app',express.static(__dirname + '/public/app'));
 app.use(express.static(__dirname + '/public'));
+
+
 
 require('./app/routes/index')(app);
 

@@ -1,0 +1,13 @@
+.topBar{
+    background-color: #3b5998;
+    border-radius: 0px;
+    border-color:#3b5998;   
+}
+
+.topBar .navbar-nav>li>a{
+    color: white !important;
+}
+
+.topBar .navbar-brand{
+    color: white;
+}
