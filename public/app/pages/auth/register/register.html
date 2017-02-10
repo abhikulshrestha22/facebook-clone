@@ -1,0 +1,51 @@
+<h4>Create an account</h4>
+<b>It's free and always will be.</b>
+
+<form >
+    <div class="row form-group" >
+        <div class="col-sm-6">
+            <input ng-model="formRegister.firstName" type="text" class="form-control" placeholder="First Name">
+        </div>
+        <div class="col-sm-6">
+            <input type="text" ng-model="formRegister.lastName" class="form-control" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="row form-group" >
+        <div class="col-sm-12">
+            <input type="email" ng-model="formRegister.email" class="form-control" placeholder="Email address">
+        </div>   
+        </div>
+    <div class="row form-group">
+        <div class="col-sm-12">
+            <input type="password" ng-model="formRegister.password" class="form-control" placeholder="New Password">
+        </div>
+    </div>
+     
+     <div class="row form-group">    
+        <div class="col-sm-12">
+             <label for="">Birthday</label>
+            <input type="date" ng-model="formRegister.birthDate" class="form-control" placeholder="Birth Date">
+        </div>
+     </div>
+     <div class="row form-group">   
+        <div class="col-sm-12">
+            <div class="row form-group">
+                <div class="col-sm-3">
+                    <label><input ng-model="formRegister.gender" value="female" type="radio" name="optradio">Female</label>
+                </div>
+                <div class="col-sm-3">
+                    <label><input ng-model="formRegister.gender" value="male" type="radio" name="optradio">Male</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-12">
+            <input type="submit" class="btn btn-large btn-success">
+        </div>
+        
+    </div>
+    
+
+    
+</form>
