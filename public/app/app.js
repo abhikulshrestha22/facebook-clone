@@ -1,6 +1,9 @@
 angular.module('app',[
+    'ngResource',
+    'app.theme',
     'app.pages',
     'ui.router'
+    
 ]).config(function($stateProvider,$urlRouterProvider){
 
 
