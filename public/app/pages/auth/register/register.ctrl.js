@@ -6,8 +6,8 @@
             .controller('registerCtrl',['$scope','auth',function($scope,auth){
                 console.log("abc");
 
-                $scope.submitFormRegister = ()=>{
-                    var register = new auth.register(formRegister);
+                $scope.submitFormRegister = function(){
+                    var register = new auth.register($scope.formRegister);
 
                     register.$post({},function(data){
                         console.log(data);

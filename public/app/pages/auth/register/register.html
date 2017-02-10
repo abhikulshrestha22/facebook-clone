@@ -1,7 +1,7 @@
 <h4>Create an account</h4>
 <b>It's free and always will be.</b>
 
-<form ng-submit="submitFormRegister" >
+<form ng-submit="submitFormRegister()" >
     <div class="row form-group" >
         <div class="col-sm-6">
             <input ng-model="formRegister.firstName" type="text" class="form-control" placeholder="First Name">
@@ -41,7 +41,7 @@
     </div>
     <div class="row form-group">
         <div class="col-sm-12">
-            <input type="submit" class="btn btn-large btn-success">
+            <input type="submit" class="btn btn-large btn-success" value="Create account">
         </div>
         
     </div>

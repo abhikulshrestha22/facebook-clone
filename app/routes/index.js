@@ -1,12 +1,12 @@
 module.exports = function(app){
 
-    // app.get('/a',function(req,res){
-    //     res.sendFile('index.html');
-    // })
+    require('./auth')(app);
 
     app.get('/',function(req,res){
         res.sendFile('index.html');
     });
+
+    
 
     
 };
